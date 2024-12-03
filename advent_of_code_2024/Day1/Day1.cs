@@ -2,21 +2,21 @@ namespace advent_of_code_2024.day1;
 
 public class Day1 : ISolution<int>
 {
-    public required string InputFile { get; set; }
-    public int Solve()
+    public required string InputFile { get; init; }
+    internal readonly SortedChainBuilder<int> ScbLeft = new(((value1, value2) => value1.CompareTo(value2)));
+    internal readonly SortedChainBuilder<int> ScbRight = new(((value1, value2) => value1.CompareTo(value2)));
+    public virtual int Solve()
     {
         using var fs = new FileStream(InputFile, FileMode.Open);
         using var sr = new StreamReader(fs);
-        SortedChainBuilder<int> scbLeft = new(((value1, value2) => value1.CompareTo(value2)));
-        SortedChainBuilder<int> scbRight = new(((value1, value2) => value1.CompareTo(value2)));
         while (sr.ReadLine() is { } line)
         {
             var parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            scbLeft.Add(int.Parse(parts[0]));
-            scbRight.Add(int.Parse(parts[1]));
+            ScbLeft.Add(int.Parse(parts[0]));
+            ScbRight.Add(int.Parse(parts[1]));
         }
-        using var enumeratorLeft = scbLeft.Build().GetEnumerator();
-        using var enumeratorRight =  scbRight.Build().GetEnumerator();
+        using var enumeratorLeft = ScbLeft.Build().GetEnumerator();
+        using var enumeratorRight =  ScbRight.Build().GetEnumerator();
         var result = 0;
         do
         {
