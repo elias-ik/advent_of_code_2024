@@ -1,10 +1,9 @@
 namespace advent_of_code_2024.day1;
 
-public class Day1 : ISolution
+public class Day1 : ISolution<int>
 {
     public required string InputFile { get; set; }
-
-    public void Solve()
+    public int Solve()
     {
         using var fs = new FileStream(InputFile, FileMode.Open);
         using var sr = new StreamReader(fs);
@@ -18,6 +17,12 @@ public class Day1 : ISolution
         }
         using var enumeratorLeft = scbLeft.Build().GetEnumerator();
         using var enumeratorRight =  scbRight.Build().GetEnumerator();
+        var result = 0;
+        do
+        {
+            result += Math.Abs(enumeratorLeft.Current - enumeratorRight.Current);
+        } while (enumeratorLeft.MoveNext() && enumeratorRight.MoveNext());
+        return result;
     }
 
     public class SortedChainBuilder<T>(SortedChainBuilder<T>.ComparatorDelegate comparator)

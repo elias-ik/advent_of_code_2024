@@ -1,6 +1,6 @@
 namespace advent_of_code_2024;
 
-public interface ISolution
+public interface ISolution<T>
 {
-    public void Solve();
+    public T Solve();
 }
