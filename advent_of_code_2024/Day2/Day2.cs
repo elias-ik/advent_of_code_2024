@@ -3,7 +3,7 @@ namespace advent_of_code_2024.Day2;
 public class Day2 : ISolution<int>
 {
     public required string InputFile { get; set; }
-    public int Solve()
+    public virtual int Solve()
     {
         using var fs = new FileStream(InputFile, FileMode.Open);
         using var sr = new StreamReader(fs);
@@ -14,13 +14,13 @@ public class Day2 : ISolution<int>
                 .Split(' ', StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
-            if (IsSafe(levels))
+            if (IsSafe(levels, false))
                 safeReports++;
         }
         return safeReports;
     }
 
-    public bool IsSafe(int[] levels)
+    private bool IsSaveRaw(int[] levels)
     {
         if (levels.Length == 1)
         {
@@ -49,6 +49,25 @@ public class Day2 : ISolution<int>
             }
         }
         return safe;
+    }
+    public bool IsSafe(int[] levels, bool dampening)
+    {
+        var result = IsSaveRaw(levels);
+        if (!result && dampening)
+        {
+            for(var i = 0; i <= levels.Length; i++)
+            {
+                var newLevels = levels
+                    .Where((value, index) => index != i)
+                    .ToArray();
+                if (IsSaveRaw(newLevels))
+                {
+                    result = true;
+                    break;
+                }
+            }
+        }
+        return result;
     }
 
     private enum Direction

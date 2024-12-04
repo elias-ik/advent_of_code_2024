@@ -18,11 +18,19 @@ var d1Part2 = new Day1_Part2()
 };
 var d1Part2Solution = d1Part2.Solve();
 Console.WriteLine($"Day 1 Part 2 solution: {d1Part2Solution}");
+
 var d2 = new Day2()
 {
     InputFile = "./Day2/input.txt"
 };
 var d2Solution = d2.Solve();
 Console.WriteLine($"Day 2 solution: {d2Solution}");
+
+var d2Part2 = new Day2_Part2()
+{
+    InputFile = "./Day2/input.txt"
+};
+var d2Part2Solution = d2Part2.Solve();
+Console.WriteLine($"Day 2 Part 2 solution: {d2Part2Solution}");
 
 
