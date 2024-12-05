@@ -31,24 +31,13 @@ public class Day4_Part2 : Day4
         var result = 0;
         try
         {
-            var s1 = new string([data[x-1][y],data[x][y],data[x+1][y]]);
-            var s2 = new string([data[x][y-1],data[x][y],data[x][y+1]]);
-            if ((s1.Equals(targetString) || Reverse(s1).Equals(targetString))
-                && (s2.Equals(targetString) || Reverse(s2).Equals(targetString)))
-            {
-                result ++;
-                return result;
-            }
-        }catch{}
-        try
-        {
             var s3 = new string([data[x-1][y-1],data[x][y],data[x+1][y+1]]);
             var s4 = new string([data[x-1][y+1],data[x][y],data[x+1][y-1]]);
             if ((s3.Equals(targetString) || Reverse(s3).Equals(targetString))
                 && (s4.Equals(targetString) || Reverse(s4).Equals(targetString)))
             {
                 result ++;
-                return result;
+                // return result;
             }
         }catch{}
         return result;
