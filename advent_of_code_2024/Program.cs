@@ -55,3 +55,10 @@ var d4 = new Day4()
 };
 var d4Solution = d4.Solve();
 Console.WriteLine($"Day 4 solution: {d4Solution}");
+
+var d4Part2 = new Day4_Part2()
+{
+    InputFile = "./Day4/input.txt"
+};
+var d4Part2Solution = d4Part2.Solve();
+Console.WriteLine($"Day 4 Part 2 solution: {d4Part2Solution}");

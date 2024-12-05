@@ -1,6 +1,15 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/elias/Library/Caches/JetBrains/Rider2024.1/resharper-host/temp/Rider/vAny/CoverageData/_advent_of_code_2024.149883586/Snapshot/snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f9611b52_002Dc1ef_002D4a55_002D9ba5_002D1e11552f92aa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;advent_of_code_2024_tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=58487816_002D7e11_002D4835_002Dbc5f_002D7193db0c7c3d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::D63B1943-3132-421E-8E2C-AFD0DF012F61::net9.0::advent_of_code_2024_tests.Day4Tests.Test2&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::D63B1943-3132-421E-8E2C-AFD0DF012F61::net9.0::advent_of_code_2024_tests.Day4Tests.Test1&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::D63B1943-3132-421E-8E2C-AFD0DF012F61::net9.0::advent_of_code_2024_tests.Day4Tests.Test4&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::D63B1943-3132-421E-8E2C-AFD0DF012F61::net9.0::advent_of_code_2024_tests.Day4Tests.Test5&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::D63B1943-3132-421E-8E2C-AFD0DF012F61::net9.0::advent_of_code_2024_tests.Day4Tests.Test6&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f9611b52_002Dc1ef_002D4a55_002D9ba5_002D1e11552f92aa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;advent_of_code_2024_tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Project Location="/Users/elias/repos/private/advent_of_code_2024/advent_of_code_2024.Test" Presentation="&amp;lt;advent_of_code_2024_tests&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String>
 	
