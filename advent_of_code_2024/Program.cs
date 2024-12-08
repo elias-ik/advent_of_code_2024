@@ -22,3 +22,5 @@ Solver.Solve(typeof(Day4_Part2), "./Day4/input.txt", "Day 4 Part2");
 
 Solver.Solve(typeof(Day5), "./Day5/input.txt", "Day 5");
 Solver.Solve(typeof(Day5_Part2), "./Day5/input.txt", "Day 5 Part2");
+
+Solver.Solve(typeof(Day6), "./Day6/input.txt", "Day 6");
