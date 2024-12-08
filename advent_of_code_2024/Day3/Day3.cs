@@ -1,9 +1,8 @@
 namespace advent_of_code_2024.Day3;
 
-public class Day3 : ISolution<int>
+public class Day3 : ASolution<int>
 {
-    public required string InputFile { get; set; }
-    public virtual int Solve()
+    public override int Solve()
     {
         var fileContent = File.ReadAllText(InputFile);
         var mult = fileContent.Split("mul(");

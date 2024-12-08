@@ -1,9 +1,8 @@
 namespace advent_of_code_2024.Day2;
 
-public class Day2 : ISolution<int>
+public class Day2 : ASolution<int>
 {
-    public required string InputFile { get; set; }
-    public virtual int Solve()
+    public override int Solve()
     {
         using var fs = new FileStream(InputFile, FileMode.Open);
         using var sr = new StreamReader(fs);

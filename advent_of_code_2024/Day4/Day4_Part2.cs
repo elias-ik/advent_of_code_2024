@@ -37,7 +37,6 @@ public class Day4_Part2 : Day4
                 && (s4.Equals(targetString) || Reverse(s4).Equals(targetString)))
             {
                 result ++;
-                // return result;
             }
         }catch{}
         return result;

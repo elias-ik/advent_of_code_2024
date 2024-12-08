@@ -2,11 +2,9 @@ using System.Text;
 
 namespace advent_of_code_2024.Day4;
 
-public class Day4 : ISolution<int>
+public class Day4 : ASolution<int>
 {
-    public required string InputFile { get; set; }
-
-    public virtual int Solve()
+    public override int Solve()
     {
         var matrix = File.ReadAllLines(InputFile).Select(l => l.ToCharArray()).ToArray();
         var result = 0;

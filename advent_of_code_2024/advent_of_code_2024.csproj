@@ -20,6 +20,9 @@
         <None Include="Day4\input.txt">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
+        <None Include="Day5\input.txt">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
 
     </ItemGroup>
 

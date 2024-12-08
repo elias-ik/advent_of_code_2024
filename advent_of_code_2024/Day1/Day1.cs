@@ -1,11 +1,10 @@
 namespace advent_of_code_2024.day1;
 
-public class Day1 : ISolution<int>
+public class Day1 : ASolution<int>
 {
-    public required string InputFile { get; init; }
     internal readonly SortedChainBuilder<int> ScbLeft = new(((value1, value2) => value1.CompareTo(value2)));
     internal readonly SortedChainBuilder<int> ScbRight = new(((value1, value2) => value1.CompareTo(value2)));
-    public virtual int Solve()
+    public override int Solve()
     {
         using var fs = new FileStream(InputFile, FileMode.Open);
         using var sr = new StreamReader(fs);
